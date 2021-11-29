@@ -21,11 +21,15 @@ def main():
     # List the species in the file (with no repeats)
     print('Species in file: \n' + str(pandas.unique(data['scientificName'])) + '\n')
 
-    # Filter the data for Delma impar (Striped Legless Lizard)
-    filtered_data = data[data.scientificName.eq('Delma impar')]
-    print('No. entries for Striped Legless Lizard: ' + str(filtered_data.recordID.count()) + '\n')
+    # List the species that have most occurrences in the data
+    most_occurrences = data.groupby('scientificName').count().sort_values(by='recordID', ascending=False)
+    print('Most occurrences: \n' + str(most_occurrences))
+
+    # Filter the data for Lampropholis delicata (Rainbow skink)
+    filtered_data = data[data.scientificName.eq('Lampropholis delicata')]
+    print('No. entries for Rainbow skink: ' + str(filtered_data.recordID.count()) + '\n')
     # Provide a summary of longitude and latitudes for this species
-    print('Longitude/latitude summary for Striped Legless Lizard: \n' + str(filtered_data.describe()) + '\n')
+    print('Longitude/latitude summary for Rainbow skink: \n' + str(filtered_data.describe()) + '\n')
 
 
 if __name__ == '__main__':

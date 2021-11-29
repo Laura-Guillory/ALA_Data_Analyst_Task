@@ -17,7 +17,7 @@ def main():
     LOGGER.info('Starting time: ' + str(start_time))
 
     data = pandas.read_csv('data/ALA_EcoCommons_Data_Analyst_dataset.csv')
-    filtered_data = data[data.scientificName.eq('Delma impar')]
+    filtered_data = data[data.scientificName.eq('Lampropholis delicata')]
     fig, ax = plt.subplots()
 
     shires = geopandas.read_file('shapefiles/gadm36_AUS_1.shp')
