@@ -31,13 +31,19 @@ def main():
                                 cbar=True,
                                 ax=ax,
                                 clip=((148, 149.5), (-35, -36)))
+    colorbar = fig.axes[1]
+    colorbar.set_position([0.75, 0.3, 0.1, 0.4])
+    plt.text(1.07, 0.72, 'High', transform=ax.transAxes)
+    plt.text(1.07, 0.26, 'Low', transform=ax.transAxes)
+
     shires = geopandas.read_file('shapefiles/gadm36_AUS_1.shp')
     shires = shires[shires['NAME_1'] == 'Australian Capital Territory']
     shires.plot(color='None', edgecolor='black', ax=ax)
     plt.axis('off')
-    plt.xlim()
 
-    plt.show()
+    plt.title('Sampling Intensity of the Rainbow Skink in ACT')
+
+    plt.savefig('result.png', dpi=100, bbox_inches='tight', quality=80)
 
     # Record how long the script took
     end_time = datetime.now()
