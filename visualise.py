@@ -19,19 +19,24 @@ def main():
     data = pandas.read_csv('data/ALA_EcoCommons_Data_Analyst_dataset.csv')
     filtered_data = data[data.scientificName.eq('Lampropholis delicata')]
     fig, ax = plt.subplots()
-
+    heat_plot = seaborn.kdeplot(data=filtered_data,
+                                x='decimalLongitude',
+                                y='decimalLatitude',
+                                fill=True,
+                                cmap='Greens',
+                                vmin=0,
+                                vmax=25,
+                                n_levels=11,
+                                cbar_kws={'ticks': []},
+                                cbar=True,
+                                ax=ax,
+                                clip=((148, 149.5), (-35, -36)))
     shires = geopandas.read_file('shapefiles/gadm36_AUS_1.shp')
     shires = shires[shires['NAME_1'] == 'Australian Capital Territory']
-    shires.plot(color='white', edgecolor='black', ax=ax)
-    seaborn.kdeplot(data=filtered_data,
-                    x='decimalLongitude',
-                    y='decimalLatitude',
-                    fill=True,
-                    cmap='Greens',
-                    alpha=0.5,
-                    gridsize=200,
-                    levels=5,
-                    ax=ax)
+    shires.plot(color='None', edgecolor='black', ax=ax)
+    plt.axis('off')
+    plt.xlim()
+
     plt.show()
 
     # Record how long the script took
