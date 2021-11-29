@@ -1,1 +1,7 @@
 pandas
+cython
+cartopy
+seaborn
+shapely
+matplotlib
+geopandas
