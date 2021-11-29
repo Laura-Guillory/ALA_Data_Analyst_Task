@@ -1,0 +1,87 @@
+Preview:
+                               recordID  ...  ABS_SA2_region_2016
+0  d30e9204-3d31-49dd-8eaf-14211833fab9  ...              NAMADGI
+1  84691aeb-0185-44c2-9da3-4f75234a8992  ...              NAMADGI
+2  875008d8-92db-49ec-9473-12269130308f  ...              NAMADGI
+3  f691c807-cedc-4a0c-96ab-888203546c01  ...              NAMADGI
+4  9526022f-b99e-4135-b501-a38089ebeb11  ...         COOMA REGION
+
+[5 rows x 11 columns]
+
+Columns:
+recordID
+decimalLatitude
+decimalLongitude
+eventDate
+family
+scientificName
+taxonConceptID
+dataResourceName
+basisOfRecord
+recordedBy
+ABS_SA2_region_2016
+
+Species in file:
+['Eulamprus tympanum' 'Liopholis whitii' 'Hemiergis'
+ 'Pseudemoia entrecasteauxii' 'Acritoscincus duperreyi'
+ 'Pseudechis porphyriacus' 'Tiliqua nigrolutea' 'Acritoscincus'
+ 'Drysdalia coronoides' 'Egernia cunninghami' 'Lampropholis guichenoti'
+ 'Acritoscincus platynotus' 'Austrelaps ramsayi' 'Egernia saxatilis'
+ 'Hemiergis decresiensis' 'Lampropholis delicata' 'Pseudonaja textilis'
+ 'Amphibolurus muricatus' 'Pseudemoia' 'Pseudemoia pagenstecheri'
+ 'Pseudemoia spenceri' 'Intellagama lesueurii' 'Varanus rosenbergi'
+ 'SCINCIDAE' 'Notechis scutatus' 'Chelodina (Chelodina) longicollis'
+ 'Intellagama lesueurii howitti' 'Eulamprus heatwolei' 'Tympanocryptis'
+ 'Morethia boulengeri' 'Eulamprus kosciuskoi' 'Cryptophis nigrescens'
+ 'Ctenotus robustus' 'Tiliqua scincoides' 'Varanus varius'
+ 'Ctenotus taeniolatus' 'Diplodactylus vittatus' 'Tiliqua rugosa'
+ 'Liopholis montana' 'Carlia tetradactyla' 'Lialis burtonis'
+ 'Diporiphora nobbi' 'Anilios nigrescens' 'Anepischetosia maccoyi'
+ 'Rankinia diemensis' 'SQUAMATA' 'Austrelaps superbus' 'Suta'
+ 'Eulamprus tympanum tympanum' 'Delma inornata' 'Menetia greyii'
+ 'Egernia saxatilis intermedia' 'Pogona barbata' 'AGAMIDAE'
+ 'Pseudemoia rawlinsoni' 'Carinascincus coventryi'
+ 'Tiliqua scincoides scincoides' 'Aprasia parapulchella' 'Ctenotus'
+ 'Hemidactylus frenatus' 'Eulamprus' 'Intellagama lesueurii lesueurii'
+ 'Eulamprus quoyii' 'CHELIDAE' 'Ctenotus spaldingi' 'Pygopus lepidopodus'
+ 'Ctenotus orientalis' 'Chelodina' 'Christinus marmoratus' 'Lampropholis'
+ 'Tympanocryptis pinguicolla' 'GEKKONIDAE' 'Saproscincus mustelinus'
+ 'Acanthophis antarcticus' 'Morelia spilota' 'SERPENTES' 'Tiliqua'
+ 'Emydura macquarii' 'Parasuta dwyeri' 'Tiliqua rugosa aspera'
+ 'Ctenotus uber' 'Delma impar' 'Tympanocryptis lineata' 'Delma'
+ 'Intellagama' 'Natator depressus' 'Cryptoblepharus pulcher' 'REPTILIA'
+ 'Pogona' 'Morelia spilota spilota' 'TESTUDINES' 'Amphibolurus'
+ 'Hemiaspis signata' 'Hydrophis platurus' 'Cyclodomorphus michaeli'
+ 'Hydrophis platurus platurus' 'Rhinoplocephalus' 'Chelonia mydas']
+
+Most occurrences:
+                                   recordID  ...  ABS_SA2_region_2016
+scientificName                               ...
+Lampropholis delicata                   924  ...                  924
+Pseudonaja textilis                     483  ...                  483
+Morethia boulengeri                     455  ...                  455
+Hemiergis decresiensis                  343  ...                  343
+Chelodina (Chelodina) longicollis       330  ...                  330
+...                                     ...  ...                  ...
+Cryptoblepharus pulcher                   1  ...                    1
+Chelonia mydas                            1  ...                    0
+Intellagama                               1  ...                    1
+Amphibolurus                              1  ...                    1
+Pogona                                    1  ...                    1
+
+[98 rows x 10 columns]
+No. entries for Rainbow skink: 924
+
+Longitude/latitude summary for Rainbow skink:
+       decimalLatitude  decimalLongitude
+count       924.000000        924.000000
+mean        -35.263857        149.171302
+std           0.104805          0.256373
+min         -35.865260        148.800000
+25%         -35.291100        149.112000
+50%         -35.226150        149.146000
+75%         -35.187500        149.175000
+max         -35.116700        150.766700
+
+
+Process finished with exit code 0
